@@ -1,0 +1,14 @@
+.link{
+  text-decoration: underline;
+  cursor: default;
+  text-transform : capitalize;
+}
+
+div.gap{
+  margin-top :2px;
+}
+
+span.ext{
+  margin-bottom: auto;
+  padding-bottom: 5px;
+}
