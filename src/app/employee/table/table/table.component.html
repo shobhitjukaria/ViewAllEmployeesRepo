@@ -12,7 +12,7 @@
       </th>
   </thead>
   <tbody>
-    <tr *ngFor= "let employee of employees | filter : employeeName | sort : sortedColumn : a">
+    <tr *ngFor= "let employee of employees | filter : employeeName | sort : sortedColumn : a | paginate: { itemsPerPage: 5, currentPage: page}">
     <ng-container> <td>{{employee.f_name}}</td></ng-container>
     <ng-container> <td>{{employee.l_name}}</td></ng-container>
     <ng-container> <td>{{employee.company}}</td></ng-container>
@@ -26,5 +26,8 @@
 
 </table>
 <ng-container class="container-fluid">
+  <div class="gap">
+    <pagination-controls  maxSize="11"  responsive="true" directionLinks="true"  autoHide="true" previousLabel="" nextLabel="" (pageChange)= "page = $event">/</pagination-controls>
+    </div>
 </ng-container>
 <span class="ext"></span>
