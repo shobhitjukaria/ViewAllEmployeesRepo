@@ -6,9 +6,9 @@
   <thead>
     <tr >
       <th *ngFor= "let col of displayedColumns">
-      <a class="contribute link text-primary" (click)= "sortedColumn=col ; a=a+1"><i class= "fas fa-sort">
+      <a class="contribute link text-primary" (click)= "sortedColumn= col.col_name ; a=a+1"><i class= "fas fa-sort">
       <span class="space"></span>
-      {{ col }}</i></a>
+      {{ col.col_value }}</i></a>
       </th>
   </thead>
   <tbody>

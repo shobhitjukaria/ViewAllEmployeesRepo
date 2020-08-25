@@ -8,7 +8,7 @@ import { EmployeeService } from '../../../shared/services/employee/employee.serv
 })
 export class TableComponent implements OnInit {
 
-  displayedColumns = ['f_name','l_name','company','city','state','zip','web','age'];
+  displayedColumns = [];
   employeeName: string="";
   employees : any;
   sortedColumn: string;
@@ -18,7 +18,8 @@ export class TableComponent implements OnInit {
   constructor( private employee : EmployeeService) { }
 
   ngOnInit() {
-    this.employee.viewEmployees().subscribe((data) => this.employees= data)
+    this.employee.viewEmployees().subscribe((data) => this.employees= data);
+    this.displayedColumns= this.employee.getColumns();
     }
   }
 
