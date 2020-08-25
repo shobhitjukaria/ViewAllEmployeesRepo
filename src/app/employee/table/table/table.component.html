@@ -1,0 +1,30 @@
+<div class="form-group">
+  <input type="text" class="form-control" id="usr" placeholder="Search by First Name">
+</div>
+
+<table class="table table-hover table-striped table-light  form-group ">
+  <thead>
+    <tr >
+      <th *ngFor= "let col of displayedColumns">
+      <a class="contribute link text-primary"><i class= "fas fa-sort">
+      <span class="space"></span>
+      {{ col }}</i></a>
+      </th>
+  </thead>
+  <tbody>
+    <tr *ngFor= "let employee of employees">
+    <ng-container> <td>{{employee.f_name}}</td></ng-container>
+    <ng-container> <td>{{employee.l_name}}</td></ng-container>
+    <ng-container> <td>{{employee.company}}</td></ng-container>
+    <ng-container> <td>{{employee.city}}</td></ng-container>
+    <ng-container> <td>{{employee.state}}</td></ng-container>
+    <ng-container> <td>{{employee.zip}}</td></ng-container>
+    <ng-container> <td>{{employee.web}}</td></ng-container>
+    <ng-container> <td>{{employee.age}}</td></ng-container>
+    </tr>
+</tbody>
+
+</table>
+<ng-container class="container-fluid">
+</ng-container>
+<span class="ext"></span>
