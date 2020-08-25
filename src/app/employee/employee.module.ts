@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { NavComponent } from './nav/nav/nav.component';
 import { HttpClientModule } from '@angular/common/http';
+import { FormsModule} from '@angular/forms';
 import { EmployeeComponent } from './employee/employee.component';
 import { TableComponent } from './table/table/table.component';
 import { FilterPipe } from '../shared/pipes/filter/filter.pipe';
@@ -16,7 +17,8 @@ import { SortPipe } from '../shared/pipes/sort/sort.pipe';
   ],
   imports: [
     CommonModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   exports:[
     EmployeeComponent,
