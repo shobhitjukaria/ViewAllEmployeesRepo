@@ -8,6 +8,7 @@ import {NgxPaginationModule} from 'ngx-pagination';
 import { TableComponent } from './table/table/table.component';
 import { FilterPipe } from '../shared/pipes/filter/filter.pipe';
 import { SortPipe } from '../shared/pipes/sort/sort.pipe';
+import { AppRoutingModule } from '../app-routing.module';
 
 @NgModule({
   declarations: [TableComponent,
@@ -20,7 +21,8 @@ import { SortPipe } from '../shared/pipes/sort/sort.pipe';
     CommonModule,
     HttpClientModule,
     FormsModule,
-    NgxPaginationModule
+    NgxPaginationModule,
+    AppRoutingModule
   ],
   exports:[
     EmployeeComponent,

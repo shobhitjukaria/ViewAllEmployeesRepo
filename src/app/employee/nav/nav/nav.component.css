@@ -1,3 +1,7 @@
 span.space{
   padding-right : 2px;
 }
+
+.cur{
+  cursor : default;
+}

@@ -1,6 +1,6 @@
 .link{
   text-decoration: underline;
-  cursor: default;
+  cursor: pointer;
   text-transform : capitalize;
 }
 
